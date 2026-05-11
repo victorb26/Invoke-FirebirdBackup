@@ -12,7 +12,7 @@ $NomeArquivo = "Backup_Sistema_$Data.zip"
 # --- 2. INÍCIO DO PROCESSO ---
 Write-Host "--- Iniciando Rotina de Backup ---" -ForegroundColor Cyan
 
-# Garante que a pasta de destino no OneDrive exista
+# Garante que a pasta de destino no seu armazenamento em nuvem exista
 if (!(Test-Path $Destino)) { 
     New-Item -ItemType Directory -Path $Destino 
     Write-Host "Pasta de destino criada no ARMAZENAMENTO EM NUVEM." -ForegroundColor Gray
